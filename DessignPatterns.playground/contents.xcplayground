@@ -11,5 +11,6 @@
         <page name='Observer'/>
         <page name='Singleton'/>
         <page name='Template Method'/>
+        <page name='Iterator'/>
     </pages>
 </playground>
