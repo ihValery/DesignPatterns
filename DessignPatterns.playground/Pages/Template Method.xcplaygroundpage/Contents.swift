@@ -7,3 +7,91 @@
 5. Создайте конкретные классы, унаследовав их от абстрактного класса. Реализуйте в них все недостающие шаги и хуки.
  */
 
+class DriveVehicle {
+    
+    //2
+    ///Сели и поехали. Весь алгорит внутри.
+    final func start() {
+        haveASeat()
+        useProtection()
+        lokkAtMirror()
+        turnSignal()
+        driveForward()
+    }
+   
+    //1
+    func haveASeat() {
+        preconditionFailure("Этот метод должен быть переопределен")
+    }
+    
+    func useProtection() {
+        preconditionFailure("Этот метод должен быть переопределен")
+    }
+    
+    func lokkAtMirror() {
+        preconditionFailure("Этот метод должен быть переопределен")
+    }
+    
+    func turnSignal() {
+        preconditionFailure("Этот метод должен быть переопределен")
+    }
+    
+    func driveForward() {
+        preconditionFailure("Этот метод должен быть переопределен")
+    }
+}
+
+class Bicycle: DriveVehicle {
+    override func haveASeat() {
+        print("Сядь на велосипед")
+    }
+    
+    override func useProtection() {
+        print("Надень шлем!")
+    }
+    
+    override func lokkAtMirror() {
+        print("Посмотри по сторонам (оцени обстановку)")
+    }
+    
+    override func turnSignal() {
+        print("Выстави руку (подай сигнал)")
+    }
+    
+    override func driveForward() {
+        print("Поехали!")
+    }
+}
+
+class Car: DriveVehicle {
+    override func haveASeat() {
+        print("Сядь в машину")
+         closeDoor()
+    }
+    
+    //Метод только для автомобиля, маленькая хитрость смотри предыдущий метод
+    func closeDoor() {
+        print("Закрой дверь, а не хочу )))")
+    }
+    
+    override func useProtection() {
+        print("Пристегни ремень безопастности!")
+    }
+    
+    override func lokkAtMirror() {
+        print("Посмотри в правое зеркало (оцени обстановку)")
+    }
+    
+    override func turnSignal() {
+        print("Включи поворотник")
+    }
+    
+    override func driveForward() {
+        print("Поехали!")
+    }
+}
+
+let car = Car()
+let bicycle = Bicycle()
+car.start()
+bicycle.start()
