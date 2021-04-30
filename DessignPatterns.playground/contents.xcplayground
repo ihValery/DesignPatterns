@@ -12,5 +12,6 @@
         <page name='Singleton'/>
         <page name='Template Method'/>
         <page name='Iterator'/>
+        <page name='Composite'/>
     </pages>
 </playground>
