@@ -14,5 +14,6 @@
         <page name='Iterator'/>
         <page name='Composite'/>
         <page name='State'/>
+        <page name='Proxy'/>
     </pages>
 </playground>
