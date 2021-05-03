@@ -15,5 +15,6 @@
         <page name='Composite'/>
         <page name='State'/>
         <page name='Proxy'/>
+        <page name='Builder'/>
     </pages>
 </playground>
