@@ -95,3 +95,7 @@ proxy.grandAccess(user: user)
 proxy.authenticate(user: user)
 proxy.grandAccess(user: user)
 
+
+let array = [1, 2, 3, 4, 5]
+
+array.contains(3)
