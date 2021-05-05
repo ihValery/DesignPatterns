@@ -16,5 +16,6 @@
         <page name='State'/>
         <page name='Proxy'/>
         <page name='Builder'/>
+        <page name='Chain of Responsibility'/>
     </pages>
 </playground>
